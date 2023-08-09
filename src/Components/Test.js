@@ -1,36 +1,23 @@
-/* import React from 'react'
-import { useState } from 'react'
+import React, { useState } from 'react'
 
 const Test = () => {
-  const [test,setTest]=useState([])
-  const [text,setText]=useState()
-
-  const element=(t)=>{
-     return setTest([t,...test])
-  }
-
-  const sam=(e)=>{
-    e.preventDefault()
-    element(text)
-    setText("")
-  }
+  const items=[
+    {id:0,color:'red',car:'Ford'},
+    {id:0,color:'blue',car:'Mercedes'},
+    {id:0,color:'green',car:'Ferrari'},
+    {id:0,color:'yellow',car:'BMW'},
+  ]
+  const [item,setItem]=useState(items)
+ 
   
+
   return (
     <div>
-      <form onSubmit={sam}>
-        <input type='text' onChange={(e)=>setText(e.target.value)}></input>
-        <input type="submit"></input>
-      </form>
-   <li>
-    
-
-   </li>
-       
-
-       
-       
+      {item.map((t)=>{
+        return t.color
+      })}
     </div>
   )
 }
 
-export default Test */
+export default Test

@@ -1,21 +1,25 @@
+/* 
+
+
 import React, { useContext, useState } from "react";
 
 import { useLocation } from "react-router-dom";
 
-const Commodities = () => {
+const AdminProduct = () => {
+ const [selectedImage, setSelectedImage] = useState(null);
   const location = useLocation();
-  const kamal = location.state;
-  
+  const data = location.state;
+ 
 
   return (
     <div>
       <div className="card">
-        {kamal.map((k, index) => {
+        {data.map((k, index) => {
+          
           return (
             <div className="sib" key={index}>
               <div>
-                <img className="brad" src={k.image}></img>
-                 
+                <img className="brad" src={URL.createObjectURL(k.selectedImage)}></img>
                 <p className="title">{k.title}</p>
               </div>
             </div>
@@ -26,4 +30,5 @@ const Commodities = () => {
   );
 };
 
-export default Commodities;
+export default AdminProduct;
+ */

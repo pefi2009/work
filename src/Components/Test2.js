@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+/* import React, { useContext, useState } from "react";
 import Test3 from "./Test3";
 import ProductContext from "./ProductContext";
 const Test2 = () => {
@@ -14,3 +14,4 @@ const Test2 = () => {
 };
 
 export default Test2;
+ */

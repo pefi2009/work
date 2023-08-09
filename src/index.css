@@ -17,6 +17,11 @@ code {
   width:100%;
   }
  
+.bar{
+  height: 100px;
+  width:100px;
+  }
+ 
 
 .sib{
   border: solid green 1px;
@@ -36,8 +41,8 @@ code {
   margin-bottom: 5px;
  }
 .card{ 
-  display: grid;
- grid-template-rows: 1fr; 
+display: grid;
+grid-template-rows: 1fr; 
 grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
 background-color:aqua;}
 

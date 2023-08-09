@@ -1,15 +1,16 @@
-import React from 'react'
-import Test2 from './Test2'
+import React, {useContext } from "react";
+import Test3 from "./Test3";
+ 
  
 
 const Home = () => {
+  
   return (
-    <div >
-   
-       <Test2></Test2> 
- 
+    <div>
+      <Test3></Test3>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+
+export default Home;
